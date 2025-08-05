@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gran venta de productos nuevos y usados</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background: #e8f5e9;
+      padding: 2rem 1rem;
+      text-align: center;
+      border-bottom: 1px solid #ccc;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      color: #2e7d32;
+    }
+    .intro {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-top: 1rem;
+    }
+    .productos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 2rem 1rem;
+    }
+    .producto {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      width: 300px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .producto img {
+      width: 100%;
+      height: auto;
+    }
+    .producto .info {
+      padding: 1rem;
+    }
+    .producto .estado {
+      font-size: 0.9rem;
+      font-weight: bold;
+      color: #fff;
+      background: #81c784;
+      padding: 0.3rem 0.6rem;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 0.5rem;
+    }
+    .producto .estado.usado {
+      background: #ffb74d;
+    }
+    .producto h3 {
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+    .producto p {
+      font-size: 0.95rem;
+      margin: 0.5rem 0;
+    }
+    .producto .precio {
+      font-weight: bold;
+      color: #2e7d32;
+      margin-top: 0.5rem;
+    }
+    .cta {
+      text-align: center;
+      margin: 2rem 1rem;
+    }
+    .cta button {
+      background: #43a047;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .mensaje {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+    /* WhatsApp floating button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      text-decoration: none;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Gran venta de productos nuevos y usados en excelente estado</h1>
+    <p class="intro">Vecina de Ñuñoa tiene a la venta los siguientes productos:</p>
+  </header>
+
+  <section class="productos">
+    <div class="producto">
+      <img src="img/bicicleta.jpg" alt="Bicicleta Trek">
+      <div class="info">
+        <span class="estado usado">Usado</span>
+        <h3>Bicicleta Trek Marlin 6 – Talla S, aro 27.5</h3>
+        <p>Usada solo 4 o 5 veces, sin detalles. Ideal para ciudad o cerro.</p>
+        <p class="precio">$480.000 CLP</p>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="img/wetsuit.jpg" alt="Wetsuit Rip Curl">
+      <div class="info">
+        <span class="estado usado">Usado</span>
+        <h3>Wetsuit Rip Curl Mujer – Talla 8</h3>
+        <p>Excelente estado. Perfecto para surf en agua fría.</p>
+        <p class="precio">$80.000 CLP</p>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="img/botines.jpg" alt="Botines Neopreno O'Neill">
+      <div class="info">
+        <span class="estado usado">Usado</span>
+        <h3>Botines Neopreno O’Neill Psycho Tech – 5mm</h3>
+        <p>Talla US5 / EU36. Interior impecable, costuras selladas.</p>
+        <p class="precio">$20.000 CLP</p>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="img/estufa.jpg" alt="Estufa Somela">
+      <div class="info">
+        <span class="estado usado">Usado</span>
+        <h3>Estufa Somela Heater 9000</h3>
+        <p>Calienta hasta 32 m². Dos potencias. Funciona perfectamente.</p>
+        <p class="precio">$70.000 CLP</p>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="img/hoverkart.jpg" alt="Hoverkart">
+      <di
