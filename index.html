@@ -12,7 +12,7 @@
     }
     header {
       background: #e0f4e0;
-      padding: 20px;
+      padding: 30px 20px 10px;
       text-align: center;
     }
     header h1 {
@@ -23,60 +23,58 @@
       color: #444;
       font-size: 16px;
     }
-    .whatsapp-top {
+    .whatsapp-top, .whatsapp-footer {
       text-align: center;
-      margin: 15px 0;
+      margin: 20px;
     }
     .whatsapp-btn {
       background-color: #25D366;
       color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
+      padding: 12px 20px;
+      border-radius: 25px;
       text-decoration: none;
       font-weight: bold;
       display: inline-block;
+      font-size: 16px;
     }
-    .container {
+    .productos {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
       padding: 20px;
     }
-    .card {
+    .producto {
       background: white;
-      border-radius: 8px;
+      border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      width: 300px;
+      width: 280px;
       overflow: hidden;
       display: flex;
       flex-direction: column;
     }
-    .card img {
+    .producto img {
       width: 100%;
-      height: auto;
+      height: 200px;
+      object-fit: contain;
+      background: #f0f0f0;
     }
-    .card .info {
+    .info {
       padding: 15px;
     }
-    .used-tag {
-      background-color: #ffc107;
-      color: #000;
+    .estado {
+      background: #ffc107;
+      color: black;
       display: inline-block;
-      padding: 2px 8px;
+      font-size: 13px;
+      padding: 3px 8px;
       border-radius: 5px;
-      font-size: 12px;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
-    .price {
-      color: green;
+    .precio {
+      color: #2e7d32;
       font-weight: bold;
-      margin-top: 10px;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #e0f4e0;
+      margin-top: 8px;
     }
   </style>
 </head>
@@ -87,129 +85,133 @@
     <p>Vecina de Ñuñoa tiene a la venta los siguientes productos:</p>
   </header>
 
+  <!-- BOTÓN WHATSAPP INICIO -->
   <div class="whatsapp-top">
-    <a href="https://wa.me/56912345678" target="_blank" class="whatsapp-btn">WhatsApp 💬</a>
+    <a href="https://wa.me/56973617889" target="_blank" class="whatsapp-btn">WhatsApp 💬</a>
   </div>
 
-  <div class="container">
+  <section class="productos">
 
     <!-- Producto 1 -->
-    <div class="card">
+    <div class="producto">
       <img src="img/bicicleta.jpg" alt="Bicicleta Trek" />
-      <div class="card-content">
-        <span class="tag">Usado</span>
-        <div class="title">Bicicleta Trek Marlin 6 – Talla S, aro 27.5</div>
-        <div class="desc">Usada solo 4 o 5 veces, sin detalles. Ideal para ciudad o cerro.</div>
-        <div class="price">$480.000 CLP</div>
+      <div class="info">
+        <div class="estado">Usado</div>
+        <h3>Bicicleta Trek Marlin 6 – Talla S, aro 27.5</h3>
+        <p>Usada solo 4 o 5 veces, sin detalles. Ideal para ciudad o cerro.</p>
+        <div class="precio">$480.000 CLP</div>
       </div>
     </div>
 
     <!-- Producto 2 -->
-    <div class="card">
+    <div class="producto">
       <img src="img/wetsuit.jpg" alt="Wetsuit Rip Curl" />
-      <div class="card-content">
-        <span class="tag">Usado</span>
-        <div class="title">Wetsuit Rip Curl Mujer – Talla 8</div>
-        <div class="desc">Excelente estado. Perfecto para surf en agua fría.</div>
-        <div class="price">$80.000 CLP</div>
+      <div class="info">
+        <div class="estado">Usado</div>
+        <h3>Wetsuit Rip Curl Mujer – Talla 8</h3>
+        <p>Excelente estado. Perfecto para surf o deportes acuáticos.</p>
+        <div class="precio">$80.000 CLP</div>
       </div>
     </div>
 
     <!-- Producto 3 -->
-    <div class="card">
-      <img src="img/botines.jpg" alt="Botines Neopreno O’Neill" />
-      <div class="card-content">
-        <span class="tag">Usado</span>
-        <div class="title">Botines Neopreno O’Neill Psycho Tech – 5mm</div>
-        <div class="desc">Talla US5 / EU36. Interior impecable, costuras selladas.</div>
-        <div class="price">$20.000 CLP</div>
+    <div class="producto">
+      <img src="img/botines.jpg" alt="Botines Neopreno" />
+      <div class="info">
+        <div class="estado">Usado</div>
+        <h3>Botines Neopreno O’Neill Psycho Tech – 5mm</h3>
+        <p>Talla US5 / EU36. Interior impecable, costuras selladas.</p>
+        <div class="precio">$20.000 CLP</div>
       </div>
     </div>
 
     <!-- Producto 4 -->
-    <div class="card">
+    <div class="producto">
       <img src="img/estufa.jpg" alt="Estufa Somela" />
-      <div class="card-content">
-        <span class="tag">Usado</span>
-        <div class="title">Estufa Somela Heater 9000</div>
-        <div class="desc">Calienta hasta 32 m². Dos potencias. Funciona perfectamente.</div>
-        <div class="price">$70.000 CLP</div>
+      <div class="info">
+        <div class="estado">Usado</div>
+        <h3>Estufa Somela Heater 9000</h3>
+        <p>Calienta hasta 32 m². Dos potencias. Funciona perfectamente.</p>
+        <div class="precio">$70.000 CLP</div>
       </div>
     </div>
 
     <!-- Producto 5 -->
-    <div class="card">
-      <img src="img/hoverkart.jpg" alt="Hoverkart rojo" />
-      <div class="card-content">
-        <span class="tag">Usado</span>
-        <div class="title">Hoverkart – Rojo con asiento negro</div>
-        <div class="desc">Se ajusta al tamaño del niño/a. Muy entretenido. Funcional.</div>
-        <div class="price">$20.000 CLP</div>
+    <div class="producto">
+      <img src="img/hoverkart.jpg" alt="Hoverkart" />
+      <div class="info">
+        <div class="estado">Usado</div>
+        <h3>Hoverkart – Rojo con asiento negro</h3>
+        <p>Ajustable y firme. Convierte hoverboard en kart.</p>
+        <div class="precio">$20.000 CLP</div>
       </div>
     </div>
 
     <!-- Producto 6 -->
-    <div class="card">
+    <div class="producto">
       <img src="img/colchon.jpg" alt="Colchón CIC" />
-      <div class="card-content">
-        <span class="tag">Usado</span>
-        <div class="title">Colchón CIC Smart – 1 Plaza</div>
-        <div class="desc">Sin manchas ni hundimientos. Muy cómodo y firme.</div>
-        <div class="price">$90.000 CLP</div>
+      <div class="info">
+        <div class="estado">Usado</div>
+        <h3>Colchón CIC Smart – 1 Plaza</h3>
+        <p>Sin manchas ni hundimientos. Muy cómodo y bien cuidado.</p>
+        <div class="precio">$90.000 CLP</div>
       </div>
     </div>
 
     <!-- Producto 7 -->
-    <div class="card">
+    <div class="producto">
       <img src="img/mochila.jpg" alt="Mochila HP" />
-      <div class="card-content">
-        <span class="tag">Usado</span>
-        <div class="title">Mochila HP Odyssey</div>
-        <div class="desc">Para laptop de hasta 15.6". Muy cómoda y resistente.</div>
-        <div class="price">$25.000 CLP</div>
+      <div class="info">
+        <div class="estado">Usado</div>
+        <h3>Mochila HP Odyssey</h3>
+        <p>Acolchada, resistente y con múltiples compartimentos.</p>
+        <div class="precio">$25.000 CLP</div>
       </div>
     </div>
 
     <!-- Producto 8 -->
-    <div class="card">
+    <div class="producto">
       <img src="img/estuche-switch.jpg" alt="Estuche Switch" />
-      <div class="card-content">
-        <span class="tag">Nuevo</span>
-        <div class="title">Estuche protector rígido para Nintendo Switch</div>
-        <div class="desc">Nuevo. Protege consola, juegos y cables. Interior acolchado.</div>
-        <div class="price">$10.000 CLP</div>
+      <div class="info">
+        <div class="estado">Nuevo</div>
+        <h3>Estuche protector rígido para Nintendo Switch</h3>
+        <p>Nuevo. Compartimentos internos, cierre completo.</p>
+        <div class="precio">$10.000 CLP</div>
       </div>
     </div>
 
     <!-- Producto 9 -->
-    <div class="card">
+    <div class="producto">
       <img src="img/carro.jpg" alt="Carro tipo wagon" />
-      <div class="card-content">
-        <span class="tag">Nuevo</span>
-        <div class="title">Carro tipo wagon – NUEVO</div>
-        <div class="desc">Plegable. Ideal para playa, picnic o ferias. Todo terreno.</div>
-        <div class="price">$60.000 CLP</div>
+      <div class="info">
+        <div class="estado">Nuevo</div>
+        <h3>Carro tipo wagon – NUEVO</h3>
+        <p>Plegable, ideal para playa, picnic o ferias. Ruedas todo terreno.</p>
+        <div class="precio">$60.000 CLP</div>
       </div>
     </div>
 
     <!-- Producto 10 -->
-    <div class="card">
+    <div class="producto">
       <img src="img/nemo.jpg" alt="Porta pijama Nemo" />
-      <div class="card-content">
-        <span class="tag">Usado</span>
-        <div class="title">Porta pijama Nemo – Original Disney</div>
-        <div class="desc">Limpio y en buen estado. Ideal para cama infantil.</div>
-        <div class="price">$15.000 CLP</div>
+      <div class="info">
+        <div class="estado">Usado</div>
+        <h3>Porta pijama Nemo – Original Disney</h3>
+        <p>Limpio y sin daños. Ideal para decoración infantil.</p>
+        <div class="precio">$15.000 CLP</div>
       </div>
     </div>
 
   </section>
 
-  <div class="whatsapp">
-    <a href="https://wa.me/5673617889" target="_blank">
-      Contáctame para consultas y/o ofertas
+  <!-- BOTÓN WHATSAPP PIE DE PÁGINA -->
+  <div class="whatsapp-footer">
+    <a href="https://wa.me/56973617889" target="_blank" class="whatsapp-btn">
+      Contáctame 💬
     </a>
   </div>
 
 </body>
 </html>
+
+
